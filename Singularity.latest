@@ -19,4 +19,5 @@ exec diamond "$@"
 diamond help
 
 %labels
-Maintainer	sven.fillinger@qbic.uni-tuebingen.de
+Maintainer	sven.fillinger@qbic.uni-tuebingen.de+
+Organization    Quantitative Biology Center (QBiC)
