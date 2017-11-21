@@ -49,4 +49,4 @@ To keep image sizes as small as possible, we use the Alpine Linux base image (on
 
 ## Author
 
-* [Alexander Peltzer](https://github.com/apeltzer)
+* [Sven Fillinger](https://github.com/sven1103)
