@@ -10,7 +10,13 @@ build.sh
 
 %environment
 #Set your toolname here and the appropriate version to have this in the metadata of your container
-    <TOOL>_VERSION=v1.0
+    DIAMOND_VERSION=v0.9.13
+
+%runscript
+exec diamond "$@"
+
+%test
+diamond help
 
 %labels
-Maintainer	alexander.peltzer@uni-tuebingen.de
+Maintainer	sven.fillinger@qbic.uni-tuebingen.de
