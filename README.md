@@ -1,10 +1,6 @@
 # qbic-singularity-diamond
-A Singularity container for Diamond, an accelerated BLAST compatible local sequence aligner. 
-    
-_B. Buchfink, Xie C., D. Huson, "Fast and sensitive protein alignment using DIAMOND", Nature Methods 12, 59-60 (2015)._
-
-For information about diamond, please visit: https://github.com/bbuchfink/diamond.
-
+A Singularity container for MALT, the MEGAN alignment tool (https://ab.inf.uni-tuebingen.de/software/malt). 
+   
 For further information or help reffering the container, please contact: sven.fillinger@qbic.uni-tuebingen.de. 
 
 ## Documentation
@@ -17,8 +13,8 @@ We provide always a bootstrap file (`Singularity`) tagged `.latest` which repres
 Clone the repository:
 
 ```bash
-git clone https://github.com/qbicsoftware/qbic-singularity-diamond.git
-cd qbic-singularity-diamond
+git clone https://github.com/qbicsoftware/qbic-singularity-malt.git
+cd qbic-singularity-malt
 ```
 
 Since Singularity 2.4, the build command from file looks like this:
@@ -30,7 +26,7 @@ sudo singularity build myContainer.simg <Singularity file>
 You can also download the build and ready-to-use container from Singularity Hub:
 
 ```bash
-singularity pull shub://qbicsoftware/qbic-singularity-diamond:latest
+singularity pull shub://qbicsoftware/qbic-singularity-malt:latest
 ...
 ```
 
@@ -38,7 +34,7 @@ singularity pull shub://qbicsoftware/qbic-singularity-diamond:latest
 To run the container and calling Diamond you just need to 
 
 ```bash
-singularity exec myContainer.simg diamond [arguments]
+singularity exec myContainer.simg malt [arguments]
 singularity exec myContainer.simg diamond help
 ```
 
