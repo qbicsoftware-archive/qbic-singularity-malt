@@ -1,4 +1,7 @@
 # qbic-singularity-MALT
+
+[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/641)
+
 A Singularity container for MALT, the MEGAN alignment tool (https://ab.inf.uni-tuebingen.de/software/malt). 
    
 For further information or help reffering the container, please contact: sven.fillinger@qbic.uni-tuebingen.de. 
