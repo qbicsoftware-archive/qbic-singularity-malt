@@ -1,5 +1,5 @@
 Bootstrap:docker
-From:alpine:3.6
+From:frolvlad/alpine-oraclejdk8:8.151.12-slim
 
 %post
 /bin/sh build.sh
@@ -10,14 +10,14 @@ build.sh
 
 %environment
 #Set your toolname here and the appropriate version to have this in the metadata of your container
-    DIAMOND_VERSION=v0.9.13
+    MALT_VERSION=v0_4_0
 
-%runscript
-exec diamond "$@"
+#%runscript
+#exec diamond "$@"
 
 %test
-diamond help
+java -version
 
 %labels
-Maintainer	sven.fillinger@qbic.uni-tuebingen.de+
+Maintainer  sven.fillinger@qbic.uni-tuebingen.de+
 Organization    Quantitative Biology Center (QBiC)
