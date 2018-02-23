@@ -1,4 +1,4 @@
-# qbic-singularity-diamond
+# qbic-singularity-MALT
 A Singularity container for MALT, the MEGAN alignment tool (https://ab.inf.uni-tuebingen.de/software/malt). 
    
 For further information or help reffering the container, please contact: sven.fillinger@qbic.uni-tuebingen.de. 
