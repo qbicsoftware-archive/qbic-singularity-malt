@@ -1,15 +1,15 @@
-# qbic-singularity-MALT
+# qbic-singularity-malt
 
 [![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/641)
 
-A Singularity container for MALT, the MEGAN alignment tool (https://ab.inf.uni-tuebingen.de/software/malt). 
+A Singularity container with MALT, the MEGAN alignment tool (https://ab.inf.uni-tuebingen.de/software/malt), created by [Daniel H. Huson](https://ab.inf.uni-tuebingen.de/people/welcome.html/huson/welcome.html). 
    
-For further information or help reffering the container, please contact: sven.fillinger@qbic.uni-tuebingen.de. 
+For further information or help reffering the _container_, please contact: sven.fillinger@qbic.uni-tuebingen.de. 
 
 ## Documentation
 
 ### Bootstrap files with tags
-We provide always a bootstrap file (`Singularity`) tagged `.latest` which represents the most resent development status of the container. If you see version tags like `.v1.0`, this means that this is the recipe of a container with a stable version tag.
+We provide always a bootstrap file (`Singularity`) tagged `.latest` which represents the most resent development status of the container. If you see version tags like `.v0.4.0`, this means that this is the recipe of a container with a stable version tag of MALT.
 
 ### How to build the container
 
@@ -33,18 +33,16 @@ singularity pull shub://qbicsoftware/qbic-singularity-malt:latest
 ...
 ```
 
-### How to run the container and calling SnpEff
-To run the container and calling Diamond you just need to 
+### How to run the container and calling MALT
+To run the malt-run script, you just need to 
 
 ```bash
-singularity exec myContainer.simg malt [arguments]
-singularity exec myContainer.simg diamond help
+singularity exec myContainer.simg malt-run --help
+# or even shorter
+singularity run myContainer.simg --help 
+# or even more shorter
+./myContainer.simg --help
 ```
-
-### Image sizes
-
-To keep image sizes as small as possible, we use the Alpine Linux base image (only 5MB in size)! instead of using full-size dependencies that we dont want to have in our environment at all. 
- 
 
 ## Author
 
